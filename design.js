@@ -14,6 +14,14 @@ function redraw() {
 	let p = $("#maxCamberLoc").val() / 10;  // 10p is the second digit of a NACA 4 digit
 	let t = $("#thickness").val() / 100; // 100t is the last 2 digits of a NACA 4 digit
 
+	if (Math.round(t * 100) < 10) {
+		var tFormatted = "0" + Math.round(t * 100);
+	}
+	else {
+		var tFormatted = Math.round(t * 100);
+	}
+	$("#shape").html(m * 100 + "" + p * 10 + "" + tFormatted);
+
 	let topxs = [];
 	let bottomxs = [];
 	let camberxs = [];
