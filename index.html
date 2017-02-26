@@ -10,7 +10,8 @@
       <div class="row">
         <div class="col-md-9" style="background-color:rgb(240,240,240)">
           <canvas id="mainCanvas" width="800px" height="250px"></canvas>
-          <canvas id="clCanvas" width="800px" height="250px"></canvas>
+          <canvas id="clCanvas" width="400px" height="250px"></canvas>
+          <canvas id="cdCanvas" width="400px" height="250px"></canvas>
         </div>
         <div class="col-md-3" style="background-color:rgb(230,230,230)">
 
@@ -19,7 +20,7 @@
           <label for="maxCamber">Max Camber</label>
           <input type="range" id="maxCamber" min="0" value="2" max="5" step="0.25" oninput="redraw()">
           <label for="maxCamberLoc">Max Camber Location</label>
-          <input type="range" id="maxCamberLoc" min="1" value="4" max="5" step="1" oninput="redraw()">
+          <input type="range" id="maxCamberLoc" min="1" value="5" max="5" step="1" oninput="redraw()">
           <label for="thickness">Max Thickness</label>
           <input type="range" id="thickness" min="1" value="15" max="30" step="1" oninput="redraw()">
 
